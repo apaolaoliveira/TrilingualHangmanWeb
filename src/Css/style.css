@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+/* Reset */
+* {
+    font-family: 'Itim', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+img, p, a{
+    -webkit-user-drag: none;
+    user-select: none; 
+}
+
+:root{
+    font-size: 14px;
+    --pink: #d4aeae;
+    --white: #f1f1f1;
+    --gray: #323232;
+}
+
+/* Keyboard */
+
+.keyboard .keys{
+    grid-template-columns: repeat(10, 1fr);
+    cursor: pointer;
+    display: grid;
+    grid-gap: 10px;  
+    user-select: none;    
+}
+
+.keyboard .keys button{
+    border: none;
+    font-size: 2rem;
+    border-radius: 8px;
+    background-color: #dddcdc;
+    color: black;
+    padding: 5px 10px;
+    font-weight: 700;
+    cursor: pointer;
+    align-items: center;
+}
+
+.keyboard .keys :nth-child(21) {
+    grid-column-start: 3; 
+}
+
+.keyboard .keys button:hover{
+    background-color: #a8a8a8;
+}
+
+/* Game */
+
+.hangman-imgs {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.word{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.attempts{
+    margin-bottom: 17px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#current-game {
+    display: flex;
+    align-items: self-end;
+    width: 680px;
+    margin-top: 40px;
+    user-select: none;
+}
+
+/* buttons */
+
+.background-red{
+    background-color: rgb(245, 127, 123) !important;
+}
+
+.background-green{
+    background-color: rgb(105, 244, 92) !important;
+}
+
+button:disabled{
+    cursor: default !important;
+}
+
+/* Footer */
+footer{
+    font-weight: 500;
+    font-size: 20px;
+    bottom: 30px;
+    position: fixed;
+    display: flex;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+footer a{    
+    color: #d13834;
+}

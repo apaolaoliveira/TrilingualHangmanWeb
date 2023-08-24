@@ -1,0 +1,147 @@
+/* Header */
+header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 20px;
+    background-color: #323232;
+    user-select: none;
+
+}
+
+.header-container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    color: var(--white);
+}
+
+.title-icon {
+    display: flex; 
+    align-items: center; 
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.newGame{
+    position: relative;
+    margin-left: 30px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 19px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    background-color: #f1f1f1;
+}
+
+.newGame:hover{
+    background-color: #ffbc00;
+    cursor: pointer;
+}
+
+:root{
+    --white: #f1f1f1;
+    --grey: #c2c0c0;
+    --darkgrey: #252525;
+}
+
+/* langs and themes settings*/
+.language,
+.theme {
+    position: relative;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.language ul,
+.theme ul {
+    position: absolute;    
+    background-color: var(--white);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+    list-style: none; 
+    font-size: 19px;  
+    margin-top: 10px;
+    display: none;
+}
+
+.language ul{
+    width: 145px; 
+}
+
+.theme ul{
+    width: 160px; 
+}
+
+.language ul li a,
+.theme ul li a {    
+    color: var(--darkgrey);
+    padding: 7px  10px;
+    text-decoration: none;
+}
+
+.language ul li:hover,
+.theme ul li:hover {
+    background-color: var(--grey);
+    border-radius: 8px;
+}
+
+.language li,
+.theme li {
+    display: flex;
+    align-items: center; 
+}
+
+.language-selected,
+.theme-selected {
+    text-transform: uppercase;
+    display: flex;   
+    align-items: center;
+    color: var(--white);
+    font-size: 20px;  
+    cursor: default;
+    white-space: nowrap;
+}
+
+.theme-container,
+.lang-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.icon,
+.theme-icon,
+.language-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.lang-arrow,
+.theme-arrow {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.lang-arrow:hover,
+.theme-arrow:hover{
+    opacity: .9;
+}
+
+.clean-icon-theme{
+    background-image: url('/src/Imgs/themes/emptyIcon.png') !important;
+}
